@@ -10,19 +10,26 @@
   background: var(--gray-500);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  justify-content: space-between;
 
-  input[type='checkbox'] {
-    width: 22px;
-    height: 22px;
-    clip-path: circle(46% at 50% 50%);
-  }
+  div {
+    display: flex;
+    gap: 0.875rem;
 
-  p {
-    width: 632px;
-    font-size: 14px;
-    color: var(--gray-100);
-    font-weight: 400;
+    input[type='checkbox'] {
+      width: 22px;
+      height: 22px;
+      clip-path: circle(40% at 50% 50%);
+      accent-color: var(--blue);
+    }
 
+    p {
+      font-size: 14px;
+      color: var(--gray-100);
+      font-weight: 400;
+
+    }
+    line-height: 20px;
   }
 
   svg {
@@ -33,4 +40,9 @@
       transition: 0.1s;
     }
   }
+}
+
+.completed p {
+  text-decoration: line-through;
+  opacity: 0.5;
 }
