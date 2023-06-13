@@ -12,9 +12,10 @@
 - Mostrar o progresso de conclusão das tarefas
 </br></br></br>
 
-<img src="assets/versao-mobile.png">
+![versao-mobile](https://github.com/wanderson648/rocketseat-todolist-desafio-01/assets/62625309/bdbeaa2e-a2a7-4397-ba21-124283a04430)
+
 </br></br>
-<img src="assets/versao-desktop.png">
+![versao-desktop](https://github.com/wanderson648/rocketseat-todolist-desafio-01/assets/62625309/161fa48f-59a5-4fcf-9532-d6fc2128ccd2)
 
 </br></br>
 
