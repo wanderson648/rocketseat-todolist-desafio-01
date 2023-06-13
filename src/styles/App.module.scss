@@ -1,0 +1,143 @@
+.container {
+  max-width: 1440px;
+
+  .header {
+    height: 200px;
+    background: var(--gray-700);
+
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: calc(200px - 130px) 0;
+    }
+  }
+}
+
+.main {
+  max-width: 736px;
+  margin: 0 auto;
+
+  .form {
+    display: flex;
+    margin-top: -25px;
+
+    input {
+      flex: 1;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+      background: var(--gray-500);
+      color: var(--gray-300);
+      font-size: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+        color: var(--gray-300);
+      }
+    }
+
+    button {
+      padding: 16px;
+      margin-left: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      background: var(--blue-dark);
+      border: none;
+      border-radius: 8px;
+      color: var(--white);
+      font-weight: 700;
+      padding: 16px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        margin-left: 8px;
+      }
+
+      &:hover {
+        background: var(--blue);
+        transition: 0.1s;
+      }
+    }
+
+  }
+
+  .taskcontaner {
+    margin-top: 64px;
+
+    .taskstatus {
+      display: flex;
+      justify-content: space-between;
+      color: var(--purple);
+      font-size: 14px;
+
+      .created {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        span {
+          background: var(--gray-400);
+          padding: 2px 8px;
+          border-radius: 999px;
+          color: var(--white);
+        }
+      }
+
+      .done {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        span {
+          background: var(--gray-400);
+          padding: 2px 8px;
+          border-radius: 999px;
+          color: var(--white);
+        }
+      }
+
+    }
+
+    .taskcard {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      padding: 16px;
+      align-items: flex-start;
+      height: 72px;
+      border: 1px solid var(--gray-400);
+      background: var(--gray-500);
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+
+      input[type='checkbox'] {
+        width: 22px;
+        height: 22px;
+        clip-path: circle(46% at 50% 50%);
+      }
+
+      p {
+        width: 632px;
+        font-size: 14px;
+        color: var(--gray-100);
+        font-weight: 400;
+        
+      }
+
+      svg {
+        cursor: pointer;
+
+        &:hover {
+          color: var(--danger);
+          transition: 0.1s;
+        }
+      }
+    }
+  }
+}
